@@ -420,6 +420,10 @@
     cursor: pointer;
 }
 
+.contacts__icons-elem a {
+    text-decoration: none;
+}
+
 .contacts__icons-elem:hover {
     background: #E9E9E9;
 }
@@ -449,6 +453,10 @@
 
 .contacts__info-iconsMobile {
     display: none;
+}
+
+.contacts__info-iconsMobile a {
+    text-decoration: none;
 }
 
 .contacts__info-icons {
