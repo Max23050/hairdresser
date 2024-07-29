@@ -249,7 +249,6 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
     cursor: pointer;
 }
 
@@ -977,6 +976,7 @@ td:last-child {
         padding: 0 16px;
         font-size: 12px;
         height: 31px;
+        margin-right: 8px;
     }
 
     .prev-btn, .next-btn {
@@ -1122,6 +1122,23 @@ td:last-child {
 
     .fixed__contacts-icon {
         display: none;
+    }
+
+    .fixedBlock {
+        height: 54px;
+        top: 20px;
+        padding-left: 8px;
+        padding-left: 8px;
+    }
+
+    .fixed__languages-elem {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .reviews-slide {
+        margin-right: 8px;
     }
 
 
