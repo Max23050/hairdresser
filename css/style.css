@@ -746,6 +746,9 @@ td:last-child {
 
 .portfolio-slide img {
     border-radius: 20px;
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
 }
 
 .dots, .dots-review {
@@ -1118,6 +1121,7 @@ td:last-child {
 
     .portfolio-slide img {
         height: 278px;
+        width: 209px;
     }
 
     img.bio-mobile-img {
