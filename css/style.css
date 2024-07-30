@@ -664,6 +664,10 @@ td:last-child {
     padding-top: 32px;
 }
 
+.slide-bio-mobile {
+    display: none;
+}
+
 .bio-title {
     color: #141414;
     font-family: Montserrat;
@@ -786,10 +790,28 @@ td:last-child {
         height: auto;
         padding-top: 0;
     }
+
+    .header__info-phone img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .header__info-address img {
+        width: 10px;
+        height: 12.681px;
+    }
+
+    .header__info-phone, .header__info-address {
+        font-size: 12px;
+    }
+
+    .header__info-phone a {
+        color: #FFF;
+    }
     
     .header__wrapper {
         flex-direction: column;
-        padding-bottom: 90px;
+        padding-bottom: 85px;
     }
 
     .header__img {
@@ -937,6 +959,20 @@ td:last-child {
         border-color: #FFF;
     }
 
+    td:first-child {
+        width: 47%;
+        padding-left: 15px;
+    }
+
+    td:last-child {
+        width: 22%;
+        padding-right: 0;
+    }
+
+    .men-price td:last-child {
+        padding-right: 0;
+    }
+
     
     .price__section-title span {
         margin-left: 29px;
@@ -969,6 +1005,37 @@ td:last-child {
         display: none;
     }
 
+    .slide-bio-mobile {
+        display: block;
+        border-radius: 20px;
+        background: #FFF;
+        width: 305px;
+        height: 100%;
+        padding: 23px 20px 22px 20px;
+    }
+
+    .bio-mobile-title {
+        color: #141414;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .bio-mobile-descr {
+        color: #141414;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        white-space: normal; /* Позволяет тексту переноситься на новую строку */
+        overflow: visible;
+        margin-top: 8px;
+    }
+    
+
     .portfolio__categories {
         overflow-x: auto;
         white-space: nowrap;
@@ -996,12 +1063,27 @@ td:last-child {
         height: auto;
     }
 
+    .portfolio-bio {
+        overflow-x: auto;
+        white-space: nowrap;
+        max-width: 100%;
+        height: 300px;
+    }
+
+    .portfolio-bio::-webkit-scrollbar {
+        display: none;
+    }
+
     .portfolio-slide {
         height: auto;
     }
 
     .portfolio-slide img {
-        width: 200px;
+        height: 100%;
+    }
+
+    .slide-bio-mobile {
+        height: 100%;
     }
 
     .reviews__title {
@@ -1045,6 +1127,10 @@ td:last-child {
     .contacts__info-phone {
         font-size: 16px;
         margin-top: 24px;
+    }
+
+    .contacts__info-phone a {
+        color: #141414;
     }
 
     .contacts__info-address {
@@ -1148,6 +1234,7 @@ td:last-child {
     .reviews-slide {
         margin-right: 8px;
     }
+
 
 
 }
