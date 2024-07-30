@@ -17,11 +17,18 @@
             <div class="fixed__languages-elem">en</div>
             <div class="fixed__languages-elem">cz</div>
         </div>
+        <div class="fixed__languages-mobile">
+            <div class="fixed__languages-elem-mobile language-active">ru</div>
+            <div class="fixed__languages-menu">
+                <div class="fixed__languages-elem-mobile">en</div>
+                <div class="fixed__languages-elem-mobile">cz</div>
+            </div>
+        </div>
         <div class="fixed__navigation">
             <div class="fixed__navigation-elem"><a href="#about">обо мне</a></div>
-            <div class="fixed__navigation-elem"><a href="#about">услуги и цены</a></div>
-            <div class="fixed__navigation-elem"><a href="#about">мои работы</a></div>
-            <div class="fixed__navigation-elem"><a href="#about">отзывы</a></div>
+            <div class="fixed__navigation-elem"><a href="#price">услуги и цены</a></div>
+            <div class="fixed__navigation-elem"><a href="#portfolio">мои работы</a></div>
+            <div class="fixed__navigation-elem"><a href="#reviews">отзывы</a></div>
         </div>
         <div class="fixed__contacts">
             <a href="https://t.me/praha_salon_alona">
@@ -88,12 +95,12 @@
             </div>
             <div class="about__wrapper">
                 <div class="about__descr">
-                    Процесс трансформации и поиск новых образов, включая пикси, каре и <br class="responsive-br">
-                    длинные стрижки, выполняется с тщательным подбором каждой детали <br class="responsive-br">
+                    Процесс трансформации и поиск новых образов, включая <span class="und">пикси</span>, <span class="und">каре</span> и <br class="responsive-br">
+                    <span class="und">длинные стрижки</span>, выполняется с тщательным подбором каждой детали <br class="responsive-br">
                     под особенности внешности и пожелания клиента, а искусное владение <br class="responsive-br">
                     различными техниками окрашивания позволяет достигать идеального <br class="responsive-br">
-                    цвета и блеска волос, будь то классическое однотонное окрашивание, <br class="responsive-br">
-                    мелирование или сложные креативные техники. <br> <br>
+                    цвета и блеска волос, будь то <span class="und">классическое однотонное окрашивание</span>, <br class="responsive-br">
+                    <span class="und">мелирование</span> или <span class="und">сложные креативные техники</span>. <br> <br>
 
                     <span>Моя цель</span> – не просто удовлетворить ожидания, но и превзойти их, чтобы <br class="responsive-br"> 
                     каждый клиент уходил с искренней улыбкой и чувством полного <br class="responsive-br">
@@ -117,14 +124,14 @@
                         </div>
                     </div>
                     <img src="img/bio-img.jpg" alt="bio" class="about__img">
-                    <div class="info-btn about__btn">
+                    <div class="info-btn about__btn" id="scroll-to-portfolio">
                         подробнее <img src="icons/arrow-icon.svg" alt="arrow">
                     </div>
                 </div>
             </div>
         </div>
     </section> 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="price__title">Услуги и цены</div>
             <div class="price__wrapper">
@@ -241,28 +248,35 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="porftolio__title">Мои работы <svg class="arrow-mobile" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.18872 17.167C8.18872 17.4515 8.27902 17.7244 8.43975 17.9256C8.60049 18.1268 8.81849 18.2399 9.04581 18.2399L29.2611 18.2399L23.8666 24.9907C23.7869 25.0904 23.7237 25.2088 23.6805 25.3392C23.6374 25.4695 23.6152 25.6092 23.6152 25.7503C23.6152 25.8914 23.6374 26.0311 23.6805 26.1614C23.7237 26.2917 23.7869 26.4102 23.8666 26.5099C23.9463 26.6097 24.0409 26.6888 24.145 26.7428C24.2491 26.7968 24.3607 26.8246 24.4734 26.8246C24.5861 26.8246 24.6977 26.7968 24.8018 26.7428C24.9059 26.6888 25.0005 26.6097 25.0802 26.5099L31.9369 17.9266C32.0167 17.8269 32.0801 17.7085 32.1233 17.5782C32.1665 17.4478 32.1887 17.3081 32.1887 17.167C32.1887 17.0258 32.1665 16.8861 32.1233 16.7557C32.0801 16.6254 32.0167 16.507 31.9369 16.4073L25.0802 7.82399C25.0005 7.72424 24.9059 7.64511 24.8018 7.59112C24.6977 7.53713 24.5861 7.50935 24.4734 7.50935C24.3607 7.50935 24.2491 7.53713 24.145 7.59112C24.0409 7.64511 23.9463 7.72424 23.8666 7.82399C23.7869 7.92375 23.7237 8.04217 23.6805 8.17251C23.6374 8.30285 23.6152 8.44254 23.6152 8.58362C23.6152 8.72469 23.6374 8.86439 23.6805 8.99473C23.7237 9.12506 23.7869 9.24349 23.8666 9.34324L29.2611 16.094L9.04581 16.094C8.81849 16.094 8.60049 16.2071 8.43975 16.4083C8.27902 16.6095 8.18872 16.8824 8.18872 17.167Z" fill="white"/>
                 </svg>
             </div>
             <div class="portfolio__categories">
-                <div class="portfolio__categories-elem">Мелирование</div>
-                <div class="portfolio__categories-elem">Яркие окрашивания</div>
-                <div class="portfolio__categories-elem">Окрашивания в один тон</div>
-                <div class="portfolio__categories-elem">Аэртач</div>
-                <div class="portfolio__categories-elem category-active">Биозавивка</div>
-                <div class="portfolio__categories-elem">Женские стрижки</div>
-                <div class="portfolio__categories-elem">Мужские стрижки</div>
+                <div class="portfolio__categories-elem category-active" data-category="bright-colors">Мелирование</div>
+                <div class="portfolio__categories-elem" data-category="bright-colors">Яркие окрашивания</div>
+                <div class="portfolio__categories-elem" data-category="single-tone">Окрашивания в один тон</div>
+                <div class="portfolio__categories-elem" data-category="airtouch">Аэртач</div>
+                <div class="portfolio__categories-elem" data-category="bio">Биозавивка</div>
+                <div class="portfolio__categories-elem" data-category="women">Женские стрижки</div>
+                <div class="portfolio__categories-elem" data-category="men">Мужские стрижки</div>
             </div>
             <div class="portfolio__wrapper">
-                <div class="portfolio-bio">
+                <div class="portfolio-bio portfolio-block">
                     <div class="portfolio-slide slide-bio-mobile">
                         <div class="bio-mobile-title">Биозавивка серии MOSSA</div>
                         <div class="bio-mobile-descr">
                             В 1999 году специалисты Green Light создали и запатентовали уникальную формулу биозавивки Mossa™ Waving System. С тех пор она получила высокую оценку специалистов и клиентов по всему миру. В составе Mossa отсутствуют агрессивные элементы классических химических завивок, такие как тиогликолевая кислота, аммиак и перекись водорода. Основным компонентом является цистеамин, аналогичный цистину, который присутствует в человеческих волосах.
                         </div>
+                    </div>
+                    <div class="portfolio-slide slide-bio-mobile">
+                        <div class="bio-mobile-title">Биозавивка серии MOSSA</div>
+                        <div class="bio-mobile-descr">
+                            Формулы Mossa™ доработаны и обогащены Booster Plex для защиты кожи и волос, комплексом Sea Complex для питания и защиты волос, а также компонентом Color Protect для сохранения цвета волос во время и после процедуры.
+                        </div>
+                        <img src="img/bio-mini5.jpg" alt="bio" class="bio-mobile-img">
                     </div>
                     <div class="portfolio-slide slide-bio">
                         <div class="bio-wrapper">
@@ -304,10 +318,244 @@
                         <div class="dot"></div>
                     </div>
                 </div>
+                <div class="portfolio-highlighting portfolio-block active-block">
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                        <img src="img/bio-portfolio.jpg" alt="bio" class="bio-img">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M28.7992 14.4006L19.1992 24.0006L28.7992 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" transform="matrix(-1 0 0 1 48 0)" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M19.2008 14.4006L28.8008 24.0006L19.2008 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="portfolio-bright-colors portfolio-block">
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                        <img src="img/bio-portfolio.jpg" alt="bio" class="bio-img">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M28.7992 14.4006L19.1992 24.0006L28.7992 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" transform="matrix(-1 0 0 1 48 0)" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M19.2008 14.4006L28.8008 24.0006L19.2008 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="portfolio-single-tone portfolio-block">
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                        <img src="img/bio-portfolio.jpg" alt="bio" class="bio-img">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M28.7992 14.4006L19.1992 24.0006L28.7992 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" transform="matrix(-1 0 0 1 48 0)" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M19.2008 14.4006L28.8008 24.0006L19.2008 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="portfolio-airtouch portfolio-block">
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                        <img src="img/bio-portfolio.jpg" alt="bio" class="bio-img">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M28.7992 14.4006L19.1992 24.0006L28.7992 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" transform="matrix(-1 0 0 1 48 0)" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M19.2008 14.4006L28.8008 24.0006L19.2008 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="portfolio-women portfolio-block">
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                        <img src="img/bio-portfolio.jpg" alt="bio" class="bio-img">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M28.7992 14.4006L19.1992 24.0006L28.7992 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" transform="matrix(-1 0 0 1 48 0)" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M19.2008 14.4006L28.8008 24.0006L19.2008 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="portfolio-men portfolio-block">
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                    </div>
+                    <div class="portfolio-slide">
+                        
+                        <img src="img/bio-portfolio.jpg" alt="bio" class="bio-img">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="portfolio-slide">
+                        <img src="img/bio-example.jpg" alt="bio">
+                    </div>
+                    <div class="prev-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M28.7992 14.4006L19.1992 24.0006L28.7992 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" transform="matrix(-1 0 0 1 48 0)" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="next-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M19.2008 14.4006L28.8008 24.0006L19.2008 33.6006" stroke="white" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="reviews__title">Отзывы<svg class="arrow-mobile" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.18872 17.167C8.18872 17.4515 8.27902 17.7244 8.43975 17.9256C8.60049 18.1268 8.81849 18.2399 9.04581 18.2399L29.2611 18.2399L23.8666 24.9907C23.7869 25.0904 23.7237 25.2088 23.6805 25.3392C23.6374 25.4695 23.6152 25.6092 23.6152 25.7503C23.6152 25.8914 23.6374 26.0311 23.6805 26.1614C23.7237 26.2917 23.7869 26.4102 23.8666 26.5099C23.9463 26.6097 24.0409 26.6888 24.145 26.7428C24.2491 26.7968 24.3607 26.8246 24.4734 26.8246C24.5861 26.8246 24.6977 26.7968 24.8018 26.7428C24.9059 26.6888 25.0005 26.6097 25.0802 26.5099L31.9369 17.9266C32.0167 17.8269 32.0801 17.7085 32.1233 17.5782C32.1665 17.4478 32.1887 17.3081 32.1887 17.167C32.1887 17.0258 32.1665 16.8861 32.1233 16.7557C32.0801 16.6254 32.0167 16.507 31.9369 16.4073L25.0802 7.82399C25.0005 7.72424 24.9059 7.64511 24.8018 7.59112C24.6977 7.53713 24.5861 7.50935 24.4734 7.50935C24.3607 7.50935 24.2491 7.53713 24.145 7.59112C24.0409 7.64511 23.9463 7.72424 23.8666 7.82399C23.7869 7.92375 23.7237 8.04217 23.6805 8.17251C23.6374 8.30285 23.6152 8.44254 23.6152 8.58362C23.6152 8.72469 23.6374 8.86439 23.6805 8.99473C23.7237 9.12506 23.7869 9.24349 23.8666 9.34324L29.2611 16.094L9.04581 16.094C8.81849 16.094 8.60049 16.2071 8.43975 16.4083C8.27902 16.6095 8.18872 16.8824 8.18872 17.167Z" fill="white"/>
@@ -333,6 +581,12 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.88665 0C5.71613 0 4.5652 0.258826 3.54246 0.751708C2.50104 1.21224 1.622 1.90836 0.998591 2.7668C0.366195 3.63757 0.0210311 4.64207 0.000589778 5.67109L0.0002931 42.2994L0.000589778 42.3289C0.0210311 43.3579 0.366195 44.3624 0.998591 45.2331C1.622 46.0918 2.50104 46.7877 3.54246 47.2485C4.5652 47.7411 5.71613 48 6.88665 48C8.07376 48 9.24072 47.7339 10.2743 47.2272C10.297 47.2162 10.3195 47.2045 10.3417 47.1925L44.4955 28.8676C45.5312 28.4148 46.4054 27.7249 47.0236 26.8718C47.6612 25.9909 48 24.9717 48 23.9313C48 22.891 47.6612 21.8718 47.0236 20.9909C46.4051 20.1369 45.5292 19.4464 44.4923 18.9937L10.3361 0.804415C10.3157 0.793566 10.2951 0.783036 10.2743 0.772833C9.24072 0.266223 8.07376 0 6.88665 0Z" fill="white"/>
                         </svg>
                     </div>
+                    <div class="reviews-slide">
+                        <img src="img/review1.jpg" alt="review">
+                    </div>
+                    <div class="reviews-slide">
+                        <img src="img/review1.jpg" alt="review">
+                    </div>
                     <div class="prev-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                             <path d="M28.7992 14.4006L19.1992 24.0006L28.7992 33.6006" stroke="white" stroke-width="2"/>
@@ -345,12 +599,12 @@
                             <circle cx="24" cy="24" r="23" stroke="white" stroke-width="2"/>
                         </svg>
                     </div>
-                </div>
-                <div class="dots">
-                    <div class="dot dot-active"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
+                    <div class="dots">
+                        <div class="dot dot-active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -485,9 +739,9 @@
                     </div>
                     <div class="contacts__info-navigation">
                         <div class="contacts__info-elem"><a href="#about">обо мне</a></div>
-                        <div class="contacts__info-elem"><a href="#about">услуги и цены</a></div>
-                        <div class="contacts__info-elem"><a href="#about">мои работы</a></div>
-                        <div class="contacts__info-elem"><a href="#about">отзывы</a></div>
+                        <div class="contacts__info-elem"><a href="#price">услуги и цены</a></div>
+                        <div class="contacts__info-elem"><a href="#portfolio">мои работы</a></div>
+                        <div class="contacts__info-elem"><a href="#reviews">отзывы</a></div>
                     </div>
                 </div>
                 <div class="contacts__map">
@@ -496,5 +750,6 @@
             </div>
         </div>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
