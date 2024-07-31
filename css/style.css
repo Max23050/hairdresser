@@ -751,6 +751,7 @@ td:last-child {
     object-fit: cover;
 }
 
+
 .dots, .dots-review {
     width: 42px;
     display: flex;
@@ -816,6 +817,12 @@ td:last-child {
 
 .reviews-slide img {
     border-radius: 30px;
+}
+
+.video-review {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
 }
 
 .reviews-slide {
@@ -1334,6 +1341,11 @@ td:last-child {
     
     .fixed__languages-mobile.expanded .fixed__languages-menu {
         display: block;
+    }
+
+    .video-review {
+        height: 517px;
+        width: 272px;
     }
 
     
