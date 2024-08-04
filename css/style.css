@@ -183,6 +183,7 @@ span.und {
 }
 
 .about__bio-descr {
+    width: 396px;
     color: #141414;
     font-family: Montserrat;
     font-size: 16px;
@@ -236,6 +237,7 @@ span.und {
     border-radius: 100px;
     height: 60px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* для Safari */
     width: 95%;
     left: 50%;
     transform: translateX(-50%);
@@ -381,6 +383,10 @@ span.und {
     font-weight: 500;
     line-height: normal;
     margin-top: 12px;
+}
+
+.br-mob {
+    display: none;
 }
 
 .contacts__info-phone {
@@ -645,7 +651,6 @@ td:last-child {
 
 .portfolio__categories {
     display: flex;
-    justify-content: space-between;
     margin-top: 32px;
 }
 
@@ -662,6 +667,7 @@ td:last-child {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .language-active {
@@ -765,6 +771,12 @@ td:last-child {
     width: 300px;
     object-fit: cover;
 }
+
+img.bio-img {
+    width: auto;
+    height: auto;
+}
+
 
 
 .dots, .dots-review {
@@ -917,6 +929,10 @@ td:last-child {
         padding-right: 30px;
     }
 
+    .br-mob {
+        display: block;
+    }
+
     .header {
         height: auto;
         padding-top: 0;
@@ -1003,10 +1019,10 @@ td:last-child {
         width: calc(100% + 30px);
         border-radius: 20px 0 0 20px;
         padding-top: 16px;
-        padding-left: 27px;
+        padding-left: 18px;
         padding-bottom: 16px;
-        height: auto;
         overflow: hidden;
+        height: 335px;
     }
 
     .about__bio-title {
@@ -1015,19 +1031,14 @@ td:last-child {
 
     .about__bio-descr {
         font-size: 12px;
-        width: 56%;
+        width: 54%;
+        margin-top: 10px;
     }
 
     .about__bio-descr span {
         font-size: 13px;
     }
 
-    .about__img {
-        height: 100%;
-        width: auto;
-        max-width: 50%;
-        object-fit: cover;
-    }
 
     .about__btn {
         width: 150px;
@@ -1424,7 +1435,11 @@ td:last-child {
     }
 
     .about__img {
-        right: -31px;
+        right: -52px;
+        height: 296px;
+        width: 239px;
+        top: auto;
+        bottom: 0;
     }
 
     .about__descr {
