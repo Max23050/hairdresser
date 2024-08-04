@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateDots(document.querySelector('.reviews__carousel'), dots);
     });
 
-    document.querySelector('.fixed__languages-elem-mobile.language-active').addEventListener('click', function() {
+    /* document.querySelector('.fixed__languages-elem-mobile.language-active').addEventListener('click', function() {
         document.querySelector('.fixed__languages-mobile').classList.toggle('expanded');
     });
 
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!languages.contains(e.target)) {
             languages.classList.remove('expanded');
         }
-    });
+    }); */
 
     // Функция для активации категории и открытия соответствующего блока
     function activateCategory(category) {
